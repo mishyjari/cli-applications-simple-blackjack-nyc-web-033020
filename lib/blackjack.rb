@@ -11,7 +11,7 @@ def display_card_total(n)
 end
 
 def prompt_user
-  puts "Type \'h\' to hit ot \'s\' to stay"
+  puts "Type \'h\' to hit or \'s\' to stay"
 end
 
 def get_user_input
@@ -23,7 +23,9 @@ def end_game(total)
 end
 
 def initial_round
-  deal = deal_card + deal_card
+  first_card = deal_card
+  second_card = deal_card
+  deal = first_card + second_card
   display_card_total(deal)
   deal
 end
