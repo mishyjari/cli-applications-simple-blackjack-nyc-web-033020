@@ -54,6 +54,6 @@ end
 def runner
   welcome
   cards = initial_round
-  p cards
+  hit?(cards)
 end
     
